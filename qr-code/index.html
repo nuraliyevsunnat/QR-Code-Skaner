@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Kod Generatori va Skaneri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Kod Generatori va Skaneri</h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="generator">Generator</button>
+            <button class="tab-btn" data-tab="scanner">Skaner</button>
+        </div>
+
+        <div class="tab-content active" id="generator">
+            <div class="input-section">
+                <input type="url" id="urlInput" placeholder="URL ni kiriting (masalan: https://google.com)">
+                <button id="generateBtn">QR Kod Yaratish</button>
+            </div>
+            <div id="qrCodeContainer" class="qr-container"></div>
+        </div>
+
+        <div class="tab-content" id="scanner">
+            <div class="scanner-section">
+                <button id="startScannerBtn">Skanerni Boshlash</button>
+                <div id="scannerContainer" class="scanner-container"></div>
+                <div id="scanResult" class="scan-result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

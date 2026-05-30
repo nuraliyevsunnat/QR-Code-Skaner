@@ -1,0 +1,12 @@
+{
+  "name": "qr-code-generator",
+  "version": "1.0.0",
+  "description": "QR Code Generator and Scanner",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "node server.js"
+  },
+  "keywords": ["qr-code", "generator", "scanner"],
+  "author": "",
+  "license": "MIT"
+}
